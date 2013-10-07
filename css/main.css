@@ -7,10 +7,28 @@ body {
 	background: #ffffff; /* Old browsers */
 	background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* FF3.6+*/
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */	
+/*
 	background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+*/
+/*
 	background: -o-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
+*/
 	background: -ms-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* IE10+ */
-	background: linear-gradient(top bottom, #ffffff 0%,#e5e5e5 100%); /* W3C */
+	background: linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%); /* W3C */
+
+	background-repeat: 0;
+}
+
+@-moz-document url-prefix() {
+    /* firefox-only css goes here */
+    
+}
+
+#headertext
+{
+	position: absolute;
+	top: 30px;
+	left: 260px;
 }
 
 a {
@@ -31,7 +49,7 @@ img {
 	border: 1px solid #7F7F7F;
 	font-family: serif;
 	height: 35px;
-	font-size: 25;
+	font-size: 25px;
 }
 
 #loginbutton
@@ -47,7 +65,6 @@ img {
 	background: -o-linear-gradient(top,  #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top,  #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-9 */
 }
 
 #loginbutton:hover
@@ -93,8 +110,9 @@ img {
 -----------------------------------------------------------------------------*/
 #header {
 	height: 95px;
-	font-size:60;
+	font-size:60px;
 	font-weight: bolder;
+	text-align:center;
 	
 	border: solid 1px;
 	border-radius: 10px;

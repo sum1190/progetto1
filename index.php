@@ -10,8 +10,8 @@
 <div id="wrapper">
 	<div id="header">
 		
-	<img src="./img/logo.png" alt="logo" width="80" height="80"></img>
-	School Project
+	<img src="./img/logo.png" alt="logo" width="80" height="80" style="float:left;" />
+	<h3 id="headertext" >School Project</h3>
 	</div>
 
 		<div id="middle">
