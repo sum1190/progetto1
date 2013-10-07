@@ -8,9 +8,22 @@
 
 
 <div id="wrapper">
-	<div id="header">Nome Sito</div>
-	<div id="container">
-		<div id="content">cont</div>
+	<div id="header">
+		
+		<img src="./img/logo.png" alt="logo" width="70" heigth="70"></img>
+		School Project
+	</div>
+	<div id="container" style="position: fixed; top:50%;">
+		<div id="content">
+			<form name="login" method="post" id="loginform">
+				<input id="logininput" type="text" value="User" name="tUser" />
+				<br>
+
+				<input id="logininput" type="text" value="Password" name="tPassw" />
+				<br>
+				<input id="loginbutton" type="submit" value="Accedi" name="sub"/>
+			</form>
+		</div>
 	</div>
 </div>
 	
