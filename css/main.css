@@ -12,6 +12,7 @@ body {
 	background: -ms-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* IE10+ */
 	background: linear-gradient(top bottom, #ffffff 0%,#e5e5e5 100%); /* W3C */
 }
+
 a {
 	color: blue;
 	outline: none;
@@ -85,16 +86,15 @@ img {
 	
 	border-radius: 10px;
 	padding: 10px;
-	
 }
 
 
 /* Header
 -----------------------------------------------------------------------------*/
 #header {
-	height: 75px;
+	height: 95px;
 	font-size:60;
-	text-align: center;
+	font-weight: bolder;
 	
 	border: solid 1px;
 	border-radius: 10px;
@@ -108,7 +108,6 @@ img {
 	background: linear-gradient(to bottom,  #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-9 */
 }
-
 
 /* Middle
 -----------------------------------------------------------------------------*/
@@ -141,7 +140,6 @@ img {
 	position: relative;
 	background: #B5E3FF;
 }
-
 
 /* Footer
 -----------------------------------------------------------------------------*/
