@@ -5,13 +5,12 @@
 body {
 	font: 12px/18px Arial, Tahoma, Verdana, sans-serif;
 	background: #ffffff; /* Old browsers */
-	background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+	background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* FF3.6+*/
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */	
 	background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
 	background: -o-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* IE10+ */
-	background: linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top bottom, #ffffff 0%,#e5e5e5 100%); /* W3C */
 }
 a {
 	color: blue;
@@ -40,8 +39,6 @@ img {
 	height: 30px;
 	width: 100px;
 	font-weight: bolder;
-	position: fixed;
-	
 	background: #ffffff; /* Old browsers */
 	background: -moz-linear-gradient(top,  #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#f1f1f1), color-stop(51%,#e1e1e1), color-stop(100%,#f6f6f6)); /* Chrome,Safari4+ */
@@ -58,7 +55,6 @@ img {
 	height: 30px;
 	width: 100px;
 	font-weight: bolder;
-	position: fixed;
 	
 	background: #ffffff; /* Old browsers */
 	background: -moz-linear-gradient(top,  #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%); /* FF3.6+ */
@@ -66,7 +62,7 @@ img {
 	background: -webkit-linear-gradient(top,  #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* Chrome10+,Safari5.1+ */
 	background: -o-linear-gradient(top,  #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top,  #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #fddfdf 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* W3C */
+	background: linear-gradient(to bottom,  #A7AAE5 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-9 */
 
 }
@@ -81,10 +77,11 @@ img {
 	border: solid 2px #A9A9A9;
 	height: 120px;
 	width: 300px;
-	position: fixed;
+	position: inherit;
 	top: 30%;
 	left: 35%;
 	
+	display:block;
 	
 	border-radius: 10px;
 	padding: 10px;

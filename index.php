@@ -10,20 +10,20 @@
 <div id="wrapper">
 	<div id="header">
 		
-		<img src="./img/logo.png" alt="logo" width="70" heigth="70"></img>
-		School Project
+	<img src="./img/logo.png" alt="logo" width="70" heigth="70"></img>
+	School Project
 	</div>
-	<div id="container" style="position: fixed; top:50%;">
-		<div id="content">
+
+		<div id="middle">
+			<br><br><br>
 			<form name="login" method="post" id="loginform">
 				<input id="logininput" type="text" value="User" name="tUser" />
 				<br>
 
 				<input id="logininput" type="text" value="Password" name="tPassw" />
-				<br>
+				<br><br>&emsp;&emsp;&emsp;&emsp;&emsp;
 				<input id="loginbutton" type="submit" value="Accedi" name="sub"/>
 			</form>
-		</div>
 	</div>
 </div>
 	
