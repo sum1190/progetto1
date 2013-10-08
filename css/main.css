@@ -55,6 +55,7 @@ img {
 #loginbutton
 {
 	border: 1px solid #7F7F7F;
+	border-radius: 7px;
 	height: 30px;
 	width: 100px;
 	font-weight: bolder;
