@@ -13,13 +13,14 @@
 	<div id="leftcol">gianni lol</div>
 	
 	<div id="maincol">
+		<br><br><br><br><br><br><br><br>
 		<form name="login" method="post" id="inputform" action="login.php">
-				<input type="text" value="User" name="tUser" id="inputtext" />
-				<br>
-
-				<input type="password" value="Password" name="tPassw" id="inputtext"/>
-
-				<br><br>&emsp;&emsp;&emsp;&emsp;&emsp;
+				User:
+				<input type="text" value="" name="tUser" id="inputtext" />
+				<br><br>
+				Password:
+				<input type="password" value="" name="tPassw" id="inputtext"/>
+				<br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 				<input type="submit" value="Accedi" name="sub" id="subinputbtn"/></div>
 		</form>
 </body>

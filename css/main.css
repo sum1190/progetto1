@@ -54,25 +54,28 @@ background-repeat: no-repeat;
  float:right; 
  }
  
- #inputform
- {
-	position:relative;
-/*
-	top: 20%;
-	left: 20%;
-*/
+ #inputform {
+	width: 40%;
+	border: 5px groove #7E92B3;
+	border-radius:5px;
+	padding:3px;
  }
  
- #inputtext
- {
+ #inputtext {
 	border: 1px solid #D4D4D4;
+	border-radius: 5px;
 	height: 5%;
-	width: 30%; 
-	
+	width: 99%; 
  }
  
- #subinputbtn
- {
+ #inputtext:focus{
+	border: 1px solid #0026FF;
+	outline:none;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #0026ff;
+}
+ 
+ #subinputbtn {
 	border: 1px solid;
 	border-radius: 10px;
 	border-color: Gray;
@@ -85,9 +88,16 @@ background-repeat: no-repeat;
 	background: linear-gradient(to bottom,  #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-9 */
 	
+	width: 30%;
+	height: 6%
  }
  
-
+ #subinputbtn:hover {
+	border: 1px solid #0026FF;
+	outline:none;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #0026ff;
+}
  
  
 /* ******************************************************************** */ 
@@ -109,8 +119,6 @@ height: 0;
 /* End hide from IE-mac */  
 
 
- 
- 
 /* ******************************************************************** */ 
 /*                      printer styles                                  */ 
 /* ******************************************************************** */ 
