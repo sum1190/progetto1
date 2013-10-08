@@ -49,6 +49,7 @@ img {
 	border: 1px solid #7F7F7F;
 	font-family: serif;
 	height: 35px;
+	width: 45%;
 	font-size: 25px;
 }
 
@@ -94,8 +95,14 @@ img {
 #loginform
 {
 	border: solid 2px #A9A9A9;
+/*
 	height: 120px;
+*/
+/*
 	width: 300px;
+*/
+	width:29%;
+	height :auto;
 	position: inherit;
 	top: 30%;
 	left: 35%;
