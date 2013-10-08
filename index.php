@@ -19,14 +19,7 @@
 			
 			<div id="middle">
 			<br><br><br>
-			<form name="login" method="post" id="loginform">
-				<input id="logininput" type="text" value="User" name="tUser" />
-				<br>
-
-				<input id="logininput" type="password" value="Password" name="tPassw" />
-
-				<br><br>&emsp;&emsp;&emsp;&emsp;&emsp;
-				<input id="loginbutton" type="submit" value="Accedi" name="sub"/>
+			
 
 			</form>
 	</div>
@@ -45,6 +38,14 @@
 	
 	<div id="leftcol">gianni lol</div>
 	
-	<div id="maincol">gianni malacarne</div>
+	<div id="maincol">
+		<form name="login" method="post" id="inputform">
+				<input type="text" value="User" name="tUser" id="inputtext" />
+				<br>
+
+				<input type="password" value="Password" name="tPassw" id="inputtext"/>
+
+				<br><br>&emsp;&emsp;&emsp;&emsp;&emsp;
+				<input type="submit" value="Accedi" name="sub" id="subinputbtn"/></div>
 </body>
 </html>
