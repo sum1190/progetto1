@@ -13,7 +13,7 @@
 	<div id="leftcol">gianni lol</div>
 	
 	<div id="maincol">
-		<br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br>
 		<form name="login" method="post" id="inputform" action="login.php">
 				User:
 				<input type="text" value="" name="tUser" id="inputtext" />
