@@ -1,5 +1,6 @@
 <html>
 <head>
+	<script type="text/javascript" src="./js/jquery-1.10.2.js"></script>
 	<link rel="stylesheet" href="./css/main.css" type="text/css"/>
 <title>School Project Login</title>
 </head>
@@ -10,9 +11,10 @@
 		<h1 align="center" id="headertext" >School Project</h1>
 	</div>
 	
-	<div id="leftcol">gianni lol</div>
+	<div id="leftcol"></div>
 	
 	<div id="maincol">
+		
 		<br><br><br><br><br><br>
 		<form name="login" method="post" id="inputform" action="login.php">
 				User:
@@ -20,8 +22,19 @@
 				<br><br>
 				Password:
 				<input type="password" value="" name="tPassw" id="inputtext"/>
-				<br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-				<input type="submit" value="Accedi" name="sub" id="subinputbtn"/></div>
+				<br><br>
+				<font id="regfont">Registrati</font>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+				<input type="submit" value="Accedi" name="sub" id="subinputbtn"/>
+			
+			<script>
+				$("form").fadeOut(1);
+			</script>
 		</form>
+			<script>
+				$("form").fadeIn(1000);
+			</script>
+	</div>
+
 </body>
 </html>
