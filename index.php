@@ -15,18 +15,16 @@
 	
 	<div id="maincol">
 		
-		<br><br><br><br><br><br>
-		<form name="login" method="post" id="inputform" action="login.php">
-				User:
+		<form name="login" method="post" id="inputform" action="./src/login.php">
+				<label id="lblinput" for="tUser">User:</label>
 				<input type="text" value="" name="tUser" id="inputtext" />
-				<br><br>
-				Password:
+				
+				<label id="lblinput" for="tPassw">Password:</label>
 				<input type="password" value="" name="tPassw" id="inputtext"/>
-				<br><br>
+				
 				<font id="regfont">Registrati</font>
-				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 				<input type="submit" value="Accedi" name="sub" id="subinputbtn"/>
-			
+				
 			<script>
 				$("form").fadeOut(1);
 			</script>

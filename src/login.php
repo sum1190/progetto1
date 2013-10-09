@@ -1,4 +1,4 @@
-<?PHP
+<?php
 	
 	$u='davide';
 	$p='password';
@@ -16,7 +16,7 @@
 		else{
 				//<h1>User o Password sbagliate</h1>
 				echo ('User o Password sbagliate');
-				header("Location: index.php");
+				header("Location: ../index.php");
 			}
 		
 	}
@@ -24,7 +24,7 @@
 	{
 			//<h1>Non hai inserito un dato</h1>
 			echo "Non hai inserito un dato";
-			header("Location: index.php");
+			header("Location: ../index.php");
 	}
 	
 	//Avvio la sessione
