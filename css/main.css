@@ -71,7 +71,7 @@ html, body{
 /* ********************************************************************/ 
 /*                  Login Form: style for text input                  */
 /* ********************************************************************/
- #inputtext {
+ #inputtext1,#inputtext2 {
 	min-height: 10px;
 	border: 1px solid #D4D4D4;
 	border-radius: 5px;
@@ -81,7 +81,7 @@ html, body{
 	width: 99%; 
  }
  
- #inputtext:focus{
+ #inputtext1:focus,#inputtext2:focus{
 	border: 1px solid #0026FF;
 	outline:none;
 	border-radius: 5px;
