@@ -25,11 +25,12 @@
 				<label id="lblinput" for="tPassw">Password:</label>
 				<input type="password" value="" name="tPassw" id="inputtext2"/>
 				
-				<font id="regfont">Registrati</font>
+				<font id="regfont" onclick="registerUser()">Registrati</font>
 				<input type="submit" value="Accedi" name="sub" id="subinputbtn"/>
-				
+			
 			<script>
-				$("form").fadeOut(1);
+					$("#inputform").hide();
+					$("#inputform").fadeIn(1000);			
 			</script>
 			
 			<script type="text/javascript">
@@ -54,11 +55,13 @@
 						return false;
 					}
 				}
+				
+				function registerUser()
+					$("#inputform").remove();
+					//add registration form
+				}
 			</script>
 		</form>
-			<script>
-				$("form").fadeIn(1000);
-			</script>
 	</div>
 
 </body>
