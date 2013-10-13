@@ -3,6 +3,7 @@
 -->
 <html>
 <head>
+	<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
 	<script type="text/javascript" src="./js/jquery-1.10.2.js"></script>
 	<link rel="stylesheet" href="./css/main.css" type="text/css"/>
 <title>School Project Login</title>
@@ -36,8 +37,8 @@
 			<script type="text/javascript">
 				function checkField()
 				{
-					var u=document.getElementById('inputtext1').value;
-					var p=document.getElementById('inputtext2').value;
+					var u=$("#inputtext1").val();
+					var p=$("#inputtext2").val();
 					
 					if((u==null || u=="") && (p==null || p==""))
 					{
@@ -60,7 +61,7 @@
 				{
 					$("#inputform").remove();
 					$(document).ready(function(){
-							$("#maincol").load("lcol.php");
+							$("#maincol").load("registerForm.php");
 					});
 				
 					//$("#maincol").empty();
