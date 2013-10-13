@@ -58,7 +58,12 @@
 				
 				function registerUser()
 				{
-					$("#maincol").empty();
+					$("#inputform").remove();
+					$(document).ready(function(){
+							$("#maincol").load("lcol.php");
+					});
+				
+					//$("#maincol").empty();
 					//add registration form
 				}
 			</script>
