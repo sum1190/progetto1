@@ -57,7 +57,8 @@
 				}
 				
 				function registerUser()
-					$("#inputform").remove();
+				{
+					$("#maincol").empty();
 					//add registration form
 				}
 			</script>
