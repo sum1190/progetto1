@@ -18,7 +18,6 @@
 	<div id="leftcol"></div>
 	
 	<div id="maincol">
-		
 		<form name="login" method="post" id="inputform" action="./src/login.php" onsubmit="checkField()">
 				<label id="lblinput" for="tUser">User:</label>
 				<input type="text" value="" name="tUser" id="inputtext1" />
@@ -29,47 +28,8 @@
 				<font id="regfont" onclick="registerUser()">Registrati</font>
 				<input type="submit" value="Accedi" name="sub" id="subinputbtn"/>
 			
-			<script>
-					$("#inputform").hide();
-					$("#inputform").fadeIn(1000);			
-			</script>
-			
-			<script type="text/javascript">
-				function checkField()
-				{
-					var u=$("#inputtext1").val();
-					var p=$("#inputtext2").val();
-					
-					if((u==null || u=="") && (p==null || p==""))
-					{
-						alert("No user or password provided");
-						return false;
-					}
-					else if(u==null || u=="")
-					{
-						alert("No user provided");
-						return false;
-					}
-					else if(p==null || p=="")
-					{
-						alert("No password provided");
-						return false;
-					}
-				}
-				
-				function registerUser()
-				{
-					$("#inputform").remove();
-					$(document).ready(function(){
-							$("#maincol").load("registerForm.php");
-					});
-				
-					//$("#maincol").empty();
-					//add registration form
-				}
-			</script>
+			<script type="text/javascript" src="./js/jsmain.js"></script>
 		</form>
 	</div>
-
 </body>
 </html>
