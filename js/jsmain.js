@@ -1,5 +1,6 @@
-$("inputform").ready(function showLogin()
+$("maincol").ready(function showLogin()
 {
+$("#maincol").load("loginForm.php");
 $("#inputform").hide();
 $("#inputform").fadeIn(1000);			
 });
@@ -41,18 +42,19 @@ function validateMail()
 	//control to be checked
 	var mailctrl = document.getElementById('inputtextemail');
 	var cmailctrl = document.getElementById('inputtextemail1');
-	
+	var valid = false;
 	//regular expression used to match emails
-	var regCheck = new RegExp("[a-zA-Z0-9-]{1,}@([a-zA-Z\.])?[a-zA-Z.]{1,}\.[a-zA-Z]{2,4}","g");
+	var regCheck = new RegExp("[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?","g");
 	
 	if(regCheck.test(mailctrl.value))
 	{
-		mailctrl.style.color = "green";
 		
-		if(cmailctrl.value == mailctrl.value)
+		mailctrl.style.color = "green";
+		valid=true;
+		if(cmailctrl.value == mailctrl.value && valid)
 			cmailctrl.style.color="green";
 		else
-			cmailctrl.style.colo="red";
+			cmailctrl.style.color="red";
 	}
 	else
 	{
@@ -71,3 +73,4 @@ function checkPass()
 	else
 		cPass.style.color = "red";
 }
+

@@ -15,4 +15,7 @@
 	
 	<label id="lblinput" for="tnCEmail">Conferma E-mail: </label>
 	<input type="text" name="tnCEmail" id="inputtextemail1" onKeyUp="validateMail()"/> 
+	
+	<input type="button" id="subinputbtn" style="float:left;" name="btnIndietro" value="Indietro" />
+	<input type="submit" id="subinputbtn" name="btnRegistra" value="Registra" />
 </form>
