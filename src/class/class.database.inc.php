@@ -41,7 +41,9 @@ class database{
 			if(is_array($param)){
 				$this->qry->execute($param);
 			}
-			$this->qry->execute();					//eseguo la query salvando il risultato nella variabile qry della classe database
+			else{
+				$this->qry->execute();					//eseguo la query salvando il risultato nella variabile qry della classe database
+			}
 		} 
 	}
 	
