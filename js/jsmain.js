@@ -35,8 +35,7 @@ function registerUser()
 	$("#maincol").load("registerForm.php");
 	});
 }
-			
-//TODO: check why the mail confirmation field doesn't change color -.-
+
 function validateMail()
 {
 	//control to be checked
@@ -72,5 +71,10 @@ function checkPass()
 		cPass.style.color = "green";
 	else
 		cPass.style.color = "red";
+}
+
+function backToLogin() {
+	$("#registrationForm").remove();
+	$("#maincol").load("loginForm.php");
 }
 

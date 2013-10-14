@@ -1,4 +1,4 @@
-<form id="registrationForm">
+<form id="registrationForm" method="post" action="./src/reguser.php">
 	<label id="lblinput"><strong>Registrazione utente</strong></label>
 	<br>
 	<label id="lblinput" for="tnUser">Nome utente: </label>
@@ -16,6 +16,6 @@
 	<label id="lblinput" for="tnCEmail">Conferma E-mail: </label>
 	<input type="text" name="tnCEmail" id="inputtextemail1" onKeyUp="validateMail()"/> 
 	
-	<input type="button" id="subinputbtn" style="float:left;" name="btnIndietro" value="Indietro" />
+	<input type="button" id="subinputbtn" style="float:left;" name="btnIndietro" value="Indietro" onclick="backToLogin()"/>
 	<input type="submit" id="subinputbtn" name="btnRegistra" value="Registra" />
 </form>
