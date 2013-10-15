@@ -17,9 +17,7 @@
 	
 	<div id="leftcol"></div>
 	
-	<div id="maincol">
-
-	</div>
+	<div id="maincol"></div>
 		<script type="text/javascript" src="./js/jsmain.js"></script>
 </body>
 </html>
