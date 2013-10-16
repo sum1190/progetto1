@@ -43,8 +43,8 @@ html, body{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-9 */
 } 
  
-#leftcol{
-	width:25%; 
+#leftcol{ 
+	width:25%;
 	float:left; 
 	position:relative;
  }
@@ -174,7 +174,6 @@ height: 1%;
 display: block;
 }
 /* End hide from IE-mac */  
-
 
 /* ******************************************************************** */ 
 /*                      printer styles                                  */ 
