@@ -1,10 +1,10 @@
-$("maincol").ready(function showLogin()
+$("#maincol").ready(function showLogin()
 {
 $("#maincol").load("loginForm.php");
 $("#inputform").hide();
 $("#inputform").fadeIn(1000);			
 });
-				
+
 function checkField()
 {
 	var u=$("#inputtext1").val();

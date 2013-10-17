@@ -49,7 +49,7 @@ html, body{
 	position:relative;
  }
  
-#maincol{
+#maincol,#loggedcol{
 	position: relative; 
 	width:75%;
 	float:right; 
@@ -182,5 +182,5 @@ display: block;
 @media print{ 
 /*hide the left column when printing*/ 
 #leftcol{display:none;} 
-#twocols, #maincol{width:100%; float:none;}
+#twocols, #maincol,#loggedcol{width:100%; float:none;}
 }
