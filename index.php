@@ -21,7 +21,6 @@
 	</div>
 	
 	<div id="maincol"></div>
-	<a href="logged.php">user logged page</a>
 	<script type="text/javascript" src="./js/jsmain.js"></script>
 </body>
 </html>
