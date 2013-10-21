@@ -1,3 +1,12 @@
+<?PHP
+	session_start();
+	include('./src/ses.php');
+	//se non è loggato torna al form e lo script termina
+	if(islogged_user()==0){//verifico che non sono stati messi dati su session
+         header("Location: index.php");
+    }
+	//session_destroy();
+?>
 <html>
 <head>
 	<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
@@ -27,6 +36,7 @@
 </head>	
 
 <body>
+
 	<div id="header">
 		<img src="./img/logo.png" alt="logo" width="80" height="80" style="float:left;" />
 		<h1 align="center" id="headertext" >School Project</h1>

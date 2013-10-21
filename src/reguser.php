@@ -26,7 +26,7 @@
 		case 7:echo "Non hai riempito nessun campo...\n";break;
 	}
 	if($cont!=0){
-		?><a href="../reguser.php">Torna alla pagina di registrazione</a>;<?PHP
+		?><a href="login.php">Torna alla pagina di registrazione</a>;<?PHP
 	}
 	else{
 		//Prelevo i dati dalla pagina registerForm.php
