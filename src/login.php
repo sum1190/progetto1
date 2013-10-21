@@ -15,7 +15,8 @@
 		$contr = $o->makelogin();
 	    //
 		if($contr){
-			echo "Hai effettuato il login   -> iduser: ".$o->get_iduser();
+			//echo "Hai effettuato il login   -> iduser: ".$o->get_iduser();
+			header("Location:../logged.php");
 		}
 		else{
 			header("Location: ../index.php");	
@@ -23,24 +24,7 @@
 	}//Caso in cui l'utente ha lasciato 1 o tutti e due cambi bianchi
 	else{
 			echo ("Non hai inserito un dato");
-			//header("Location: index.php");
-				//<h1>User o Password sbagliate</h1>
-				echo ('User o Password sbagliate');
-				header("Location: ../index.php");
-			}
-		/*Esempio di codice
-		$url="127.0.0.1";
-		$dbname="dbschoolproject";
-		$dbus="root";
-		$dbpas="";
-		$dsn="mysql:host=".$url.";dbname=".$dbname;	
-		$db=new PDO($dsn,$dbus,$dbpas);
-		$sql="SELECT * FROM users";
-		$qr=$db->prepare($sql);
-		$qr->execute();
-		// creazione di un array dei risultati 
-		$res = $qr->fetchAll();
-		// visualizzazione dei risultati 
-		print_r($res);
-		*/	
+			echo ('User o Password sbagliate');
+			header("Location: ../index.php");
+		}
 ?>

@@ -26,7 +26,7 @@
 		case 7:echo "Non hai riempito nessun campo...\n";break;
 	}
 	if($cont!=0){
-		?><a href="../index.php">Torna alla pagina di registrazione</a>;<?PHP
+		?><a href="../reguser.php">Torna alla pagina di registrazione</a>;<?PHP
 	}
 	else{
 		//Prelevo i dati dalla pagina registerForm.php
@@ -39,7 +39,6 @@
 		$o->exec_query($qsql,array($us));
 		$n=$o->qry_size();
 		if($n==0){
-			echo "User inesistente...";
 			//Inserisco i dati nella tabella
 			$qsql1="INSERT INTO `users`(`username`, `password`, `islogged`, `ft`) VALUES (?,?,?,?)";
 			$o->exec_query($qsql1,array($us,$ps,0,$em));
@@ -50,16 +49,11 @@
 		}
 		else if($n==1){
 				echo "User già esistente...";
+				?><a href="../reguser.php">Torna alla pagina di registrazione</a>;<?PHP
 				//header("Location: ../index.php");
 			}
 			else{
 					echo "Errore...";
 				}
 	}
-			
-/*
-tnUser
-tnPass
-tnEmail
-*/
 ?>
