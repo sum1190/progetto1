@@ -12,24 +12,23 @@
 	<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
 	<script type="text/javascript" src="./js/jquery-1.10.2.js"></script>
 	<script type="text/javascript" src="./js/jquery-ui.js"></script>
-	<script type="text/javascript" src="./js/jMenu.jquery.js"></script>
-	
-	<link rel="stylesheet" href="./css/jmenu.css" type="text/css"/>	
+
+	<script language="javascript" type="text/javascript" src="js/nav2.1.js"></script>
+
 	<link rel="stylesheet" href="./css/main.css" type="text/css"/>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
 	
-	<script>
-	  $(document).ready(function(){
-    // more complex jMenu plugin called
-    $("#jMenu").jMenu({
-      ulWidth : 'auto',
-      effects : {
-        effectSpeedOpen : 500,
-        effectTypeClose : 'fade'
-      },
-      animatedText : false
-    });
-  });
-	</script>
+<script language="javascript" type="text/javascript">
+    		$(document).ready(function(){
+				$("#JqueryMenu2").navPlugin({
+					'itemWidth': 150,
+					'itemHeight': 30,
+					'navEffect': "fade",
+					'speed': 500
+				});
+
+			});
+</script>
 
 	
 	<title>School Project - Utente Loggato</title>
@@ -45,7 +44,7 @@
 		<div id="mainMenu">
 	
 	<!-- First, write your HTML -->
-        <ul id="jMenu">
+        <ul id="JqueryMenu2">
             <li>
                 <a>Home</a>
             </li>
@@ -78,15 +77,11 @@
                 <a>strumenti</a>
                 <ul>
                     <li>
-                        <a>Category 3.2</a>
+                        <a>Aggiungi...</a>
                         <ul>
-                            <li><a>Category 3.3</a></li>
-                            <li><a>Category 3.3</a></li>
-                            <li><a>Category 3.3</a></li>
-                            <li><a>Category 3.3</a></li>
-                            <li><a>Category 3.3</a></li>
-                            <li><a>Category 3.3</a></li>
-                            <li><a>Category 3.3</a></li>
+                            <li><a>Scuola</a></li>
+                            <li><a>Laboratorio</a></li>
+                            <li><a>PC</a></li>
                         </ul>
                     </li>
                     <li>
