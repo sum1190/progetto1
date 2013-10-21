@@ -5,7 +5,7 @@
 	if(islogged_user()==0){//verifico che non sono stati messi dati su session
          header("Location: index.php");
     }
-	//session_destroy();
+	
 ?>
 <html>
 <head>
@@ -100,6 +100,7 @@
                     <li><a>Category 3.2</a></li>
                 </ul>
             </li>
+            <li><a href="./src/logout.php"><img style="padding-right:5px;"src="./img/lo.png"></img>logout</a></li>
         </ul>
 	</div>
 	
