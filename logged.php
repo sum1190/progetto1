@@ -53,9 +53,9 @@
                 <a>Scuole</a>
                 <ul>
                     <li>
-                        <a>Scuola1</a>
+                        <a>I.T.I.S Vittorio Emanuele III</a>
                         <ul>
-                            <li><a>Gruppo Lavoro1</a>
+                            <li><a>Lab B31</a>
                             <ul>
 								<li><a>PC1.1</a></li>
 								<li><a>PC1.2</a></li>
@@ -95,11 +95,39 @@
                     <li><a>Category 3.2</a></li>
                 </ul>
             </li>
-            <li><a href="./src/logout.php"><img style="padding-right:5px;"src="./img/lo.png"></img>logout</a></li>
+			
+			<li>
+				<a href="logged.php?action=info">INFO</a>
+			</li>
+			
+            <li><a href="./src/logout.php"><img style="padding-right:5px;"src="./img/lo.png"></img>LOGOUT</a></li>
         </ul>
 	</div>
 	
-	<div id="loggedcol"></div>
+	<div id="loggedcol">
+		<?PHP
+		include('./src/utils.php');
+		if(!isset($_GET['var'])){ 
+		
+		}
+		else{
+		switch($_GET['action'])
+		{
+			case 'home':
+                echo 'contatti';
+				break;
+			case 'scuole':
+                echo 'chi siamo';
+				break;
+			case 'info':
+                info();
+				break;
+			default:
+                echo '';
+		}
+		}
+		?>
+	</div>
 	
 	
 </body>
