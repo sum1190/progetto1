@@ -1,6 +1,7 @@
 <?PHP
 	session_start();
 	include('./src/ses.php');
+	include('./src/utils.php');
 	//se non è loggato torna al form e lo script termina
 	if(islogged_user()==0){//verifico che non sono stati messi dati su session
          header("Location: index.php");
@@ -52,24 +53,8 @@
             <li>
                 <a>Scuole</a>
                 <ul>
-                    <li>
-                        <a>I.T.I.S Vittorio Emanuele III</a>
-                        <ul>
-                            <li><a>Lab B31</a>
-                            <ul>
-								<li><a>PC1.1</a></li>
-								<li><a>PC1.2</a></li>
-                            </ul></li>
-                            <li><a>Gruppo Lavoro2</a></li>
-                        </ul>
-                    </li>
-                    <li>
-						<a>Scuola 2</a>
-						<ul>
-							<li><a>Gruppo Lavoro 2.1</a></li>
-							<li><a>Gruppo Lavoro 2.2</a></li>
-						</ul>
-					</li>
+						<?PHP scuole($_SESSION['id_user']);?>
+						<li><a>PC1</a></li>
                 </ul>
             </li>
 
@@ -105,12 +90,10 @@
 	</div>
 	
 	<div id="loggedcol">
+	
 		<?PHP
-		include('./src/utils.php');
-		if(!isset($_GET['action'])){ 
-		
-		}
-		else{
+		//include('./src/utils.php');
+		if(isset($_GET['action'])){ 
 			controllo($_GET['action']);
 		}
 		?>
