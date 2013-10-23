@@ -46,7 +46,7 @@
 	<!-- First, write your HTML -->
         <ul id="JqueryMenu2">
             <li>
-                <a>Home</a>
+                <a href="logged.php">Home</a>
             </li>
 
             <li>
@@ -74,10 +74,10 @@
             </li>
 
             <li>
-                <a>strumenti</a>
+                <a>STRUMENTI</a>
                 <ul>
                     <li>
-                        <a>Aggiungi...</a>
+                        <a>Aggiungi</a>
                         <ul>
                             <li><a>Scuola</a></li>
                             <li><a>Laboratorio</a></li>
@@ -85,14 +85,14 @@
                         </ul>
                     </li>
                     <li>
-                        <a>Category 3.2</a>
+                        <a>Modifica</a>
                         <ul>
                             <li><a>Category 3.3</a></li>
                             <li><a>Category 3.3</a></li>
                         </ul>
                     </li>
-                    <li><a>Category 3.2</a></li>
-                    <li><a>Category 3.2</a></li>
+                    <li><a>Rimuovi</a></li>
+                    <li><a>Profilo</a></li>
                 </ul>
             </li>
 			
@@ -107,24 +107,11 @@
 	<div id="loggedcol">
 		<?PHP
 		include('./src/utils.php');
-		if(!isset($_GET['var'])){ 
+		if(!isset($_GET['action'])){ 
 		
 		}
 		else{
-		switch($_GET['action'])
-		{
-			case 'home':
-                echo 'contatti';
-				break;
-			case 'scuole':
-                echo 'chi siamo';
-				break;
-			case 'info':
-                info();
-				break;
-			default:
-                echo '';
-		}
+			controllo($_GET['action']);
 		}
 		?>
 	</div>
