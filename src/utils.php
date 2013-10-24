@@ -27,7 +27,8 @@
 	
 	
 		
-		$qsql="SELECT nomescuola, idlab FROM scuola, regist, laboratori WHERE regist.iduser =".$id." AND scuola.idistituto = regist.idistituto AND scuola.idistituto = laboratori.idistituto";
+		//$qsql="SELECT nomescuola, idlab FROM scuola, regist, laboratori WHERE regist.iduser =".$id." AND scuola.idistituto = regist.idistituto AND scuola.idistituto = laboratori.idistituto";
+		$qsql="SELECT nomescuola, pc.idlab ,nomepc FROM scuola, regist, laboratori ,pc WHERE regist.iduser =14 AND scuola.idistituto = regist.idistituto AND scuola.idistituto = laboratori.idistituto AND pc.idlab = laboratori.idlab";
 		$o->exec_query($qsql,array());
 		$n=$o->qry_size();
 		if($n!=0){

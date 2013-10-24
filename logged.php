@@ -54,7 +54,7 @@
                 <a>Scuole</a>
                 <ul>
 						<?PHP scuole($_SESSION['id_user']);?>
-						<li><a>PC1</a></li>
+						
                 </ul>
             </li>
 
