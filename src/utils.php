@@ -28,7 +28,8 @@
 	
 		
 		//$qsql="SELECT nomescuola, idlab FROM scuola, regist, laboratori WHERE regist.iduser =".$id." AND scuola.idistituto = regist.idistituto AND scuola.idistituto = laboratori.idistituto";
-		$qsql="SELECT nomescuola, pc.idlab ,nomepc FROM scuola, regist, laboratori ,pc WHERE regist.iduser =14 AND scuola.idistituto = regist.idistituto AND scuola.idistituto = laboratori.idistituto AND pc.idlab = laboratori.idlab";
+		//$qsql="SELECT nomescuola, pc.idlab ,nomepc FROM scuola, regist, laboratori ,pc WHERE regist.iduser =".$id." AND scuola.idistituto = regist.idistituto AND scuola.idistituto = laboratori.idistituto AND pc.idlab = laboratori.idlab";
+		$qsql="SELECT nomescuola, pc.idlab, nomepc FROM scuola, regist, laboratori, pc WHERE regist.iduser =".$id." AND scuola.idistituto = regist.idistituto AND scuola.idistituto = laboratori.idistituto AND pc.idlab = laboratori.idlab AND laboratori.iduser=".$id."";
 		$o->exec_query($qsql,array());
 		$n=$o->qry_size();
 		if($n!=0){
@@ -41,11 +42,21 @@
 				echo "<li>";
 					echo "<a>".$vet_num_lab[$i][0]."</a>";		//Stampa scuola
 					//campi dei lab
+					//print_r($rw);
 						echo"<ul>";
 							for($j=0; $j<$n && $cont<$vet_num_lab[$i][1]; $j++){
 								if(strcmp($vet_num_lab[$i][0],$rw[$j][0])==0){
-									echo "<li><a>".$rw[$j][1]."</a></li>";		//stampo il laboratorio
+									echo "<li><a>".$rw[$j][1]."</a>";		//stampo il laboratorio
 									$cont++;
+									//Stampa dei pc
+									echo"<ul>";
+									for($z=0; $z<$n; $z++){//echo"<li><a>pc1</a>";
+										if(strcmp($rw[$j][1],$rw[$z][1])==0){
+											echo "<li><a>".$rw[$z][2]."</a></li>";		//stampo il laboratorio
+										}
+									}
+									echo"</ul>";
+									echo"</li>";
 								}
 							}
 						echo"</ul>";

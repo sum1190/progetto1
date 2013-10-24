@@ -59,7 +59,7 @@
             </li>
 
             <li>
-                <a>STRUMENTI</a>
+                <a>Strumenti</a>
                 <ul>
                     <li>
                         <a>Aggiungi</a>
@@ -82,7 +82,7 @@
             </li>
 			
 			<li>
-				<a href="logged.php?action=info">INFO</a>
+				<a href="logged.php?action=info">Info</a>
 			</li>
 			
             <li><a href="./src/logout.php"><img style="padding-right:5px;"src="./img/lo.png"></img>LOGOUT</a></li>
