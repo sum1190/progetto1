@@ -66,7 +66,14 @@
                         <ul>
                             <li><a>Scuola</a></li>
                             <li><a>Laboratorio</a></li>
-                            <li><a>PC</a></li>
+                            <li onclick="showPCIns()"><a>PC</a></li>
+                            	<script>
+								function showPCIns()
+								{
+									//$("#loggedcol").remove();
+									$("#loggedcol").load("pcins.php");
+								}
+								</script>
                         </ul>
                     </li>
                     <li>
@@ -87,6 +94,8 @@
 			
             <li><a href="./src/logout.php"><img style="padding-right:5px;"src="./img/lo.png"></img>LOGOUT</a></li>
         </ul>
+        
+
 	</div>
 	
 	<div id="loggedcol">
