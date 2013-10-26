@@ -1,17 +1,18 @@
 <div id="pcform" style="width:80%;z-top:100; margin-left:40px;">
 
 <style>
-input{width: 50%}
-select{width: 50%}
-textarea{width: 100%}
+*{position:relative; margin-top:10px; }
+input{width: 30% !important}
+select{width: auto;}
+textarea{width: 100;}
 </style>
 
 <form name="pcinsert">
 
-<!-- PARTE SOFTWARE -->
+<!-- PARTE S-webkit-boxOFTWARE -->
+
 <label for="spnomepc">NOME PC</label>
 <input id="inputtext1" name="spidpc" type="text"/>
-
 <!-- -->
 <label for="spidlab">GRUPPO DI LAVORO</label>
 <input id="inputtext1" name="spidlab" type="text"/>
@@ -20,11 +21,15 @@ textarea{width: 100%}
           <option>media</option>
           <option>3o</option>
 </select>
+<!--
 <br>
+-->
 <!-- -->
 <label for="sppassadmin">PASSWORD ADMINISTRATOR</label>
 <input id="inputtext1" name="sppassadmin" type="text"/>
+<!--
 <br>
+-->
 <!-- -->
 <label for="spip">IP</label>
 <input id="inputtext1" name="spip" type="text"/>
@@ -32,15 +37,21 @@ textarea{width: 100%}
 <!-- -->
 <label for="spinventario">N. INVENTARIO</label>
 <input id="inputtext1" name="spinventario" type="text"/>
+<!--
 <br>
+-->
 <!-- -->
 <label for="spinventariomonitor">N. INVENTARIO MONITOR</label>
 <input id="inputtext1" name="spinventariomonitor" type="text"/>
+<!--
 <br>
+-->
 <!-- -->
 <label for="spmotivazionescarico">MOTIVAZIONE SCARICO</label>
 <textarea id="inputtext1" name="spmotivazionescarico" value="" rows="4" cols="60"></textarea>
+<!--
 <br>
+-->
 <!-- -->
 <label for="spso">SISTEMA OPERATIVO</label>
 <input id="inputtext1" name="spso" type="text"/>
@@ -53,26 +64,36 @@ textarea{width: 100%}
 <!-- -->
 <label for="sppkwin">PRODUCT KEY WINDOWS</label>
 <input id="inputtext1" name="sppkwin" type="text"/>
+<!--
 <br>
+-->
 <!-- -->
 <label for="sppkoffice">PRODUCT KEY OFFICE</label>
 <input id="inputtext1" name="sppkoffice" type="text"/>
+<!--
 <br>
+-->
 
 <!-- -->
 <label for="spsoftinstall">SOFTWARE INSTALLATO</label>
 <textarea id="inputtext1" name="spsoftinstall"/></textarea>
+<!--
 <br>
+-->
 
 <!-- -->
 <label for="spantivirus">ANTIVIRUS</label>
 <input id="inputtext1" name="spantivirus" type="text"/>
+<!--
 <br>
+-->
 
 <!-- -->
 <label for="spbrowser">BROWSER</label>
 <input id="inputtext1" name="spbrowser" type="text"/>
+<!--
 <br>
+-->
 
 <hr style="color:gray;background-color:blue;border:0;height:2px;margin:10px;">
 <!-- PARTE HARDWARE -->
@@ -84,7 +105,9 @@ textarea{width: 100%}
           <option>WinXp</option>
           <option>Linux</option>
 </select>
+<!--
 <br>
+-->
 <!-- -->
 <label for="spschedamadre">SCHEDA MADRE</label>
 <input id="inputtext1" name="spschedamadre" type="text"/>
@@ -93,7 +116,9 @@ textarea{width: 100%}
           <option>WinXp</option>
           <option>Linux</option>
 </select>
+<!--
 <br>
+-->
 <!-- -->
 <label for="spram">RAM</label>
 <input id="inputtext1" name="spram" type="text"/>
@@ -102,7 +127,9 @@ textarea{width: 100%}
           <option>WinXp</option>
           <option>Linux</option>
 </select>
+<!--
 <br>
+-->
 <!-- -->
 <label for="spschedavideo">SCHEDA VIDEO</label>
 <input id="inputtext1" name="spschedavideo" type="text"/>
@@ -123,7 +150,7 @@ textarea{width: 100%}
 <br>
 
 <label for="spdescrizionehd">DESCRIZIONE HARD-DISK</label>
-<input id="inputtext1" name="spdescrizionehd" type="text"/>
+<input id="inputtext1" name="spdescrizionehd" type="text" style="width:100%"/>
 
 <script >
 	function cambiaVal(i,s)

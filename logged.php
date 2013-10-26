@@ -22,7 +22,7 @@
 <script language="javascript" type="text/javascript">
     		$(document).ready(function(){
 				$("#JqueryMenu2").navPlugin({
-					'itemWidth': 150,
+					'itemWidth': 200,
 					'itemHeight': 30,
 					'navEffect': "fade",
 					'speed': 500
@@ -42,7 +42,7 @@
 		<h1 align="center" id="headertext" >School Project</h1>
 	</div>
 	
-		<div id="mainMenu">
+		<div id="mainMenu" style="position:fixed;z-index:100"> <!---->
 	
 	<!-- First, write your HTML -->
         <ul id="JqueryMenu2">
@@ -70,8 +70,8 @@
                             	<script>
 								function showPCIns()
 								{
-									//$("#loggedcol").remove();
 									$("#loggedcol").load("pcins.php");
+									$("#loggedcol").css("background","inherit");
 								}
 								</script>
                         </ul>
@@ -99,7 +99,6 @@
 	</div>
 	
 	<div id="loggedcol">
-	
 		<?PHP
 		//include('./src/utils.php');
 		if(isset($_GET['action'])){ 
