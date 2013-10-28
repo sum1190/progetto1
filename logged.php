@@ -31,6 +31,27 @@
 			});
 </script>
 
+	<script>
+		$(function(){
+
+			var menu = $('#JqueryMenu2'),
+			pos = menu.offset();
+
+		$(window).scroll(function(){
+			if($(this).scrollTop() > pos.top+menu.height()-30){
+				menu.fadeOut('fast', function(){
+					$(this).removeClass('default').addClass('fixed').fadeIn('fast');
+				});
+			} else if($(this).scrollTop() <= pos.top && menu.hasClass('fixed')+30){
+				menu.fadeOut('fast', function(){
+					$(this).removeClass('fixed').addClass('default').fadeIn('fast');
+				});
+			}
+		});
+
+});
+		</script>
+
 	
 	<title>School Project - Utente Loggato</title>
 </head>	
@@ -39,13 +60,13 @@
 
 	<div id="header">
 		<img src="./img/logo.png" alt="logo" width="80" height="80" style="float:left;" />
-		<h1 align="center" id="headertext" >School Project</h1>
+		<h1 align="center" id="headertext" style="font-size:50px;" >School Project</h1>
 	</div>
 	
 		<div id="mainMenu" style="position:fixed;z-index:100"> <!---->
 	
 	<!-- First, write your HTML -->
-        <ul id="JqueryMenu2">
+        <ul id="JqueryMenu2" class="default">
             <li>
                 <a href="logged.php">Home</a>
             </li>
@@ -94,11 +115,11 @@
 			
             <li><a href="./src/logout.php"><img style="padding-right:5px;"src="./img/lo.png"></img>LOGOUT</a></li>
         </ul>
-        
-
 	</div>
 	
+	
 	<div id="loggedcol">
+		
 		<?PHP
 		//include('./src/utils.php');
 		if(isset($_GET['action'])){ 
@@ -106,7 +127,5 @@
 		}
 		?>
 	</div>
-	
-	
 </body>
 </html>

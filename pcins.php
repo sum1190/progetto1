@@ -21,9 +21,9 @@ textarea{width: 100;}
           <option>media</option>
           <option>3o</option>
 </select>
-<!--
+
 <br>
--->
+
 <!-- -->
 <label for="sppassadmin">PASSWORD ADMINISTRATOR</label>
 <input id="inputtext1" name="sppassadmin" type="text"/>
