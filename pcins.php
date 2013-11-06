@@ -8,7 +8,7 @@ textarea{width: 100;}
 label{font-weight:stronger;}
 </style>
 
-<form name="pcinsert" method="post" action="src/utils.php" >
+<form name="pcinsert" method="post" action="src/controlpc.php" >
 
 <!-- PARTE SOFTWARE -->
 <fieldset style="border: 5px groove #7E92B3;border-radius:5px;">

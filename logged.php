@@ -85,13 +85,25 @@
                     <li>
                         <a>Aggiungi</a>
                         <ul>
-                            <li><a>Scuola</a></li>
-                            <li><a>Laboratorio</a></li>
+                            <li onclick="showSchoolIns()"><a>Scuola</a></li>
+                            <li onclick="showLabIns()"><a>Laboratorio</a></li>
                             <li onclick="showPCIns()"><a>PC</a></li>
                             	<script>
 								function showPCIns()
 								{
 									$("#loggedcol").load("pcins.php");
+									$("#loggedcol").css("background","inherit");
+								}
+								
+								function showLabIns()
+								{
+									$("#loggedcol").load("divins.php #inslab");
+									$("#loggedcol").css("background","inherit");
+								}
+								
+								function showSchoolIns()
+								{
+									$("#loggedcol").load("divins.php #insschool");
 									$("#loggedcol").css("background","inherit");
 								}
 								</script>
