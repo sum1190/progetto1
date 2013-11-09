@@ -59,7 +59,7 @@ html, body{
 /*                  Login Form Style                                  */
 /* ********************************************************************/
  
- #inputform {
+ #inputform{
 	width: 40%;
 	border: 5px groove #7E92B3;
 	border-radius:5px;

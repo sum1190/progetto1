@@ -104,7 +104,7 @@
 								function showSchoolIns()
 								{
 									$("#loggedcol").load("divins.php #insschool");
-									$("#loggedcol").css("background","inherit");
+//									$("#loggedcol").css("background","inherit");
 								}
 								</script>
                         </ul>
@@ -131,7 +131,6 @@
 	
 	
 	<div id="loggedcol">
-		
 		<?PHP
 		//include('./src/utils.php');
 		if(isset($_GET['action'])){ 

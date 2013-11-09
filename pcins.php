@@ -13,18 +13,16 @@ label{font-weight:stronger;}
 <!-- PARTE SOFTWARE -->
 <fieldset style="border: 5px groove #7E92B3;border-radius:5px;">
 	<legend>Info pc</legend>
-<label for="spnomepc">NOME PC</label>
+<label for="spnomepc">NOME PC <font style="color:red;font-size:7px">(obbligatorio)</font></label>
 <input id="inputtext1" name="spidpc" type="text"/>
 <br>
 <!-- -->
-<label for="spidlab">GRUPPO DI LAVORO</label>
+<label for="spidlab">GRUPPO DI LAVORO<font style="color:red;font-size:7px">(obbligatorio)</font></label>
 <!--
 <input id="inputtext1" name="spidlab" type="text"/>
 -->
 <select name="sl1">
-          <option selected>biennio</option>
-          <option>media</option>
-          <option>3o</option>
+          <option selected></option>
 </select>
 
 <br>
